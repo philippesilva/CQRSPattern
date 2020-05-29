@@ -1,0 +1,2 @@
+# CQRSPattern
+Exemplo Padrão CQRS 
