@@ -1,0 +1,375 @@
+:root {
+    --bg__primary: #11c76f;
+    --bg__secondary: #4782ff;
+}
+
+::selection {
+    color: #fff;
+    background-color: var(--bg__primary);
+}
+
+@font-face {
+    font-family: "vag_rounded_black";
+    src: url("../fonts/VAG Rounded Std/VAGRoundedStd-Black.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "vag_rounded_bold";
+    src: url("../fonts/VAG Rounded Std/VAGRoundedStd-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "vag_rounded_light";
+    src: url("../fonts/VAG Rounded Std/VAGRoundedStd-Light.otf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "vag_rounded_thin";
+    src: url("../fonts/VAG Rounded Std/VAGRoundedStd-Thin.otf");
+    font-weight: normal;
+}
+
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #f5f9fa;
+}
+
+.sidebar {
+    color: #3e3e50;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 300px;
+}
+
+.sidebar__logo {
+    height: 100px;
+    margin-bottom: 0px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+    .sidebar__logo .feather {
+        margin-right: 20px;
+    }
+
+    .sidebar__logo h3 {
+        font-size: 25px;
+        font-weight: 100;
+        letter-spacing: 2px;
+        color: var(--bg__primary);
+        font-family: "vag_rounded_black";
+    }
+
+    .sidebar__logo span {
+        font-size: 25px;
+        letter-spacing: 2px;
+        min-width: 48px;
+        min-height: 48px;
+        margin-right: 20px;
+        display: flex;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        color: #fff;
+        background-color: var(--bg__primary);
+        font-family: "Varela Round", sans-serif;
+    }
+
+.sidebar__nav {
+    margin: 0;
+    width: 100%;
+}
+
+    .sidebar__nav li {
+        display: flex;
+        width: 100%;
+    }
+
+    .sidebar__nav:last-child {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        padding: 0;
+    }
+
+    .sidebar__nav a {
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 40px;
+        color: #444d5c;
+        font-weight: 500;
+        width: 100%;
+        height: 60px;
+        text-decoration: none;
+    }
+
+        .sidebar__nav a .icon {
+            margin-right: 20px;
+        }
+
+        .sidebar__nav a:hover {
+            background-color: #e5ecee;
+            font-weight: 600;
+        }
+
+/* .sidebar__nav .feather-home {
+  color: #78a0ee;
+}
+.sidebar__nav .feather-activity {
+  color: #6cd9c0;
+}
+.sidebar__nav .feather-package {
+  color: #fdc674;
+}
+.sidebar__nav .feather-credit-card {
+  color: #f596b2;
+}
+.sidebar__nav .feather-pie-chart {
+  color: #f68fe8;
+} */
+
+.content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.page__title {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+    .page__title h1 {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+.pull__right {
+    float: right;
+}
+
+/* =======================
+Modal
+========================== */
+.modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.modal__content {
+    width: 500px;
+    border-top: 5px solid var(--bg__primary);
+}
+
+.modal__close {
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* =======================
+Card
+========================== */
+
+.card {
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* box-shadow: 0px 3px 5px 0px #f1f1f1; */
+    margin-bottom: 40px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.13);
+}
+
+.card__header {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__body {
+    margin-bottom: 20px;
+}
+
+.card__footer {
+    padding: 20px 0 0 0;
+}
+
+/* =======================
+Buttons
+========================== */
+
+.btn {
+    border: none;
+    color: #e4f9f7;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    color: #fff;
+    box-shadow: 0px 3px 5px 0px #dfeceb;
+    background: linear-gradient(90deg, #19a778 0%, #6bc64b 100%);
+}
+
+.btn__primary {
+    background: var(--bg__primary);
+}
+
+.btn__danger {
+    background-color: #e86d8b;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    outline: 0;
+    cursor: pointer;
+}
+
+.btn__primary:active {
+    box-shadow: none;
+}
+
+/* =======================
+Table
+========================== */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+    .table th {
+        font-weight: 500;
+        color: #999;
+        font-size: 14px;
+    }
+
+    .table td {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .table tr {
+        height: 60px;
+        font-weight: 100;
+    }
+
+    .table tbody tr:hover {
+        background-color: #fbfbfb;
+    }
+
+/* =======================
+Forms
+========================== */
+
+.form__filter {
+    display: flex;
+}
+
+.form__control {
+    border: 2px solid #e2e4e7;
+    height: 50px;
+    border-radius: 4px;
+    text-indent: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #999;
+}
+
+    .form__control:focus {
+        /* border-color: #4782ff; */
+        border-color: #0a84ff;
+        box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.3);
+    }
+
+.form__label {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .form__label .icon {
+        margin-right: 10px;
+    }
+
+.value__positive {
+    color: #0dc064;
+    font-weight: 600;
+}
+
+.value__negative {
+    color: #ff676d;
+    font-weight: 600;
+}
+
+.account__color {
+    background-color: #e8eaec;
+    padding: 8px 10px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    font-weight: 500;
+    border-radius: 4px;
+    color: #8193ff;
+}
+
+    .badge .icon {
+        margin-right: 10px;
+    }
+
+
+
+.page__login {
+    padding: 40px 0;
+}

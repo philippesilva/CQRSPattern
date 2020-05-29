@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>din.money</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row center-xs">
+            <div class="col-xs-3">
+                <div class="box">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    @*<partial name="~/Partials/_Sidebar.cshtml" />*@
+
+    @*
+        <div class="content">
+
+            <div class="modal">
+                    <div class="modal__content">
+                        <div class="card">
+                            <header class="card__header">
+                                <h3>Adicionar movimentação</h3>
+                                <button class="modal__close">
+                                    <i data-feather="x" class="icon"></i>
+                                </button>
+                            </header>
+                            <div class="card__body">
+
+                                <label class="form__label">R$</label>
+                                <input type="text" class="form__control" placeholder="R$ 0,00">
+
+                                <label class="form__label">Data</label>
+                                <input type="text" class="form__control" placeholder="dd/mm/aaaa">
+
+                                <label class="form__label">Descrição</label>
+                                <input type="text" class="form__control" placeholder="Descrição da movimentação">
+
+                                <label class="form__label">Conta</label>
+                                <input type="text" class="form__control" placeholder="Add your description">
+
+                                <label class="form__label"><i data-feather="paperclip" class="icon"></i> Anexo</label>
+                                <input type="file" placeholder="...">
+
+                            </div>
+                            <div class="card__footer">
+                                <button class="btn btn__primary">
+                                    Salvar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    *@
+    @*
+            <div class="container">
+
+
+
+                <div class="page__title">
+                        <h1>
+                            Movimentações
+                        </h1>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="form__filter">
+                                <input type="text" class="form__control" placeholder="Search...">
+                            </div>
+                        </div>
+                        <div class="card__body">
+                            <button class="btn btn__primary">
+                                Adicionar movimentação
+                            </button>
+                        </div>
+                        <div class="card__body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Descrição</th>
+                                        <th>Conta</th>
+                                        <th>Categoria</th>
+                                        <th>Data</th>
+                                        <th>R$</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Restaurante Sushi
+                                        </td>
+                                        <td>
+                                            <span class="account__color">
+                                                Nubank
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="badge">
+                                                <i data-feather="coffee" class="icon"></i> Alimentação
+                                            </span>
+                                        </td>
+                                        <td>31-01-2019</td>
+                                        <td>
+                                            <span class="value__positive">
+                                                R$ 31,75
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <i data-feather="more-vertical"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Restaurante Sushi
+                                        </td>
+                                        <td>
+                                            <span class="account__color">
+                                                PicPay
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="badge">
+                                                <i data-feather="coffee" class="icon"></i> Alimentação
+                                            </span>
+                                        </td>
+                                        <td>31/01/2019</td>
+                                        <td>
+                                            <span class="value__negative">
+                                                - R$ 31,75
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <i data-feather="thumbs-down"></i>
+                                            <i data-feather="thumbs-up"></i>
+                                            <i data-feather="more-vertical"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                </div>
+
+        </div>*@
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script>
+        feather.replace()
+    </script>
+
+</body>
+
+</html>
